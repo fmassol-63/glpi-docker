@@ -22,10 +22,10 @@ Déploiement de [GLPI](https://glpi-project.org/) (gestion de parc informatique 
 
 3. Modifier le fichier `.env` et remplacer les `changeme` par des mots de passe solides :
    ```env
-   MARIADB_ROOT_PASSWORD=changeme
-   MARIADB_DATABASE=glpi
-   MARIADB_USER=glpi_user
-   MARIADB_PASSWORD=changeme
+   MYSQL_ROOT_PASSWORD=changeme
+   MYSQL_DATABASE=glpi
+   MYSQL_USER=glpi_user
+   MYSQL_PASSWORD=changeme
    ```
 
 4. Lancer les conteneurs :
@@ -41,10 +41,10 @@ Dans l'assistant d'installation de GLPI, renseigner :
 
 | Champ | Valeur |
 |---|---|
-| Serveur SQL | `mariadb` |
-| Utilisateur | valeur de `MARIADB_USER` |
-| Mot de passe | valeur de `MARIADB_PASSWORD` |
-| Base de données | valeur de `MARIADB_DATABASE` |
+| Serveur SQL | `mysql` |
+| Utilisateur | valeur de `MYSQL_USER` |
+| Mot de passe | valeur de `MYSQL_PASSWORD` |
+| Base de données | valeur de `MYSQL_DATABASE` |
 
 ## Comptes par défaut
 
